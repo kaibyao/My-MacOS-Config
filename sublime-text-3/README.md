@@ -16,6 +16,7 @@
 * Jasmine JS
 * LESS
 * Markdown Preview
+* Monokai Extended
 * Package Control
 * Pretty JSON
 * Sass
