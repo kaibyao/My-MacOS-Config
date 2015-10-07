@@ -8,8 +8,7 @@
 
 ## Install Packages
 
-* AngularInject
-* AngularJS
+* Babel
 * Better JavaScript
 * BracketHighlighter
 * Color Highlighter
@@ -20,6 +19,7 @@
 * Package Control
 * Pretty JSON
 * Sass
+* SCSS
 * SideBarEnhancements
 * SideBarFolders
 * SyncedSideBar
@@ -31,7 +31,7 @@
 
 ## Update User Keybinds and Settings preferences
 
-
+Copy contents of included files in this repo to their equivalents in Sublime Text 3.
 
 ## Manually update preferences
 

@@ -20,7 +20,6 @@ alias la="ls -A"
 setopt MENU_COMPLETE
 setopt GLOB_COMPLETE
 
-export NVM_DIR="~/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+. ~/.nvm/nvm.sh  # This loads nvm
 nvm use default
 eval "$(grunt --completion=zsh)"
