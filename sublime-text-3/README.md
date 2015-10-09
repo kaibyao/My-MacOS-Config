@@ -2,7 +2,12 @@
 
 
 
+## Install [Package Control](https://packagecontrol.io/installation)
+
+
+
 ## Install [Soda Theme](https://github.com/buymeasoda/soda-theme)
+* Make sure to also follow the instructures regarding [Syntax Highlighting](https://github.com/buymeasoda/soda-theme#syntax-highlighting-colour-schemes).
 
 
 
@@ -16,7 +21,7 @@
 * LESS
 * Markdown Preview
 * Monokai Extended
-* Package Control
+* Monokai JSON+
 * Pretty JSON
 * Sass
 * SCSS
