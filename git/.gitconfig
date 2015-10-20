@@ -13,6 +13,6 @@
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
 [user]
 	name = Kai Yao
-	email = kyao@salesforce.com
+	email = kyao@someemail.com
 [core]
-	editor = subl
+	editor = subl -w
