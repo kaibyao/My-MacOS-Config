@@ -22,9 +22,26 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.sublime-workspace",
+		"*.sublime-workspace"
+	],
+	"binary_file_patterns": [
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
 		"*.min.*",
-		"*.scssc"
+		"*.scssc",
+		"node_modules/*",
+		"dist/*"
 	],
 	"find_selected_text": true,
 	"folder_exclude_patterns":
@@ -34,14 +51,14 @@
 		".hg",
 		"*.sass-cache",
 		"coverage",
-		"CVS",
-		"node_modules"
+		"CVS"
 	],
 	"font_face": "Roboto Mono",
-	"font_size": 18,
+	"font_size": 16,
 	"ignored_packages":
 	[
 		"JavaScript",
+		"Markdown",
 		"Vintage"
 	],
 	"soda_folder_icons": true,
