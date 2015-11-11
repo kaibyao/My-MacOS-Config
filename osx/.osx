@@ -104,6 +104,21 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
+###############################################################################
+# Keyboard tweaks                                                             #
+###############################################################################
+
+# Home/End keys
+mkdir ~/Library/KeyBindings
+echo "{
+    \"UF729\"  = \"moveToBeginningOfLine:\";
+    \"\$UF729\" = \"moveToBeginningOfLineAndModifySelection:\";
+    \"UF72B\"  = \"moveToEndOfLine:\";
+    \"\$UF72B\" = \"moveToEndOfLineAndModifySelection:\";
+    \"UF72C\"  = \"pageUp:\";
+    \"UF72D\"  = \"pageDown:\";
+}" > ~/Library/KeyBindings/DefaultKeyBinding.dict
+
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
