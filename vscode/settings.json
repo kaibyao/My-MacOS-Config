@@ -2,6 +2,7 @@
 {
     "editor.fontFamily": "Roboto Mono",
     "editor.fontSize": 15,
+    "editor.renderWhitespace": true,
     
     "files.exclude": {
 		"**/.git": true,
