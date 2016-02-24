@@ -1,25 +1,27 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-
+# Sublime Text
 export SUBLIME=subl
 export EDITOR="$SUBLIME --wait"
-alias ll="ls -lh"
+
+# VS Code
+function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; }
+
+# Easier commands
+alias ll="ls -lah"
 alias la="ls -A"
 
 setopt MENU_COMPLETE
 setopt GLOB_COMPLETE
 
-. ~/.nvm/nvm.sh  # This loads nvm
+# Javascript/Node/NVM/NPM
+. ~/.nvm/nvm.sh
+
 nvm use default
 eval "$(grunt --completion=zsh)"
+
+# Maven
+export JAVA_HOME=$(/usr/libexec/java_home)

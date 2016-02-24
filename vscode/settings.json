@@ -1,0 +1,35 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "Roboto Mono",
+    "editor.fontSize": 15,
+    
+    "files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+        "**/*.pyc": true,
+		"**/*.pyo": true,
+		"**/*.exe": true,
+		"**/*.dll": true,
+		"**/*.obj": true,
+		"**/*.o": true,
+		"**/*.a": true,
+		"**/*.lib": true,
+		"**/*.so": true,
+		"**/*.dylib": true,
+		"**/*.ncb": true,
+		"**/*.sdf": true,
+		"**/*.suo": true,
+		"**/*.pdb": true,
+		"**/*.idb": true,
+		"**/*.class": true,
+		"**/*.psd": true,
+		"**/*.db": true,
+		"**/*.sublime-workspace": true
+	},
+    
+    "search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+        "**/dist": true
+	}
+}
