@@ -2,6 +2,11 @@
 
 
 
+## Add Sublime Text to command line
+`ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl`
+
+
+
 ## Install [Package Control](https://packagecontrol.io/installation)
 
 
@@ -19,6 +24,7 @@
 * Color Highlighter
 * Jasmine JS
 * LESS
+* Markdown Extended
 * Markdown Preview
 * Monokai Extended
 * Monokai JSON+
