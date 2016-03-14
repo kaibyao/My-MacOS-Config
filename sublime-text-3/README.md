@@ -46,4 +46,5 @@ Copy contents of included files in this repo to their equivalents in Sublime Tex
 
 ## Manually update preferences
 
-* Preferences > Color Scheme > User > Monokai Soda
+* Preferences > Color Scheme > User > Monokai Extended
+* (Or use `No Frills` if you want to turn off most syntax highlighting.)

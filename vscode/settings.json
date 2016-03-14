@@ -29,6 +29,7 @@
 		"**/*.db": true,
 		"**/*.sublime-workspace": true
 	},
+    "files.insertFinalNewline": true,
 
     "search.exclude": {
 		"**/node_modules": true,
