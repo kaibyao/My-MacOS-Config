@@ -31,6 +31,8 @@
 	},
     "files.insertFinalNewline": true,
 
+    "markdown.styles": ["file:///Users/kyao/Documents/Misc/My-OSX-Config/vscode/github-markdown.css"],
+
     "search.exclude": {
 		"**/node_modules": true,
 		"**/bower_components": true,
