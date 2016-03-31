@@ -14,3 +14,4 @@
     * softwrap
     * Subword Navigation
     * Nunjucks
+    * Trailing Spaces
