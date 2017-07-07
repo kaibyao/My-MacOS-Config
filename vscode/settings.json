@@ -1,18 +1,19 @@
-// Place your settings in this file to overwrite the default settings
 {
     "editor.fontFamily": "Roboto Mono",
     "editor.fontSize": 15,
     "editor.insertSpaces": false,
+    "editor.quickSuggestions": {
+        "comments": true
+    },
     "editor.renderLineHighlight": "gutter",
     "editor.renderWhitespace": "boundary",
     "editor.selectionHighlight": true,
-    "editor.wrappingColumn": 0,
-    "editor.wrappingIndent": "indent",
-
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "same",
     "files.associations": {
-        "*.cmp": "apex"
+        "*.jsx": "javascriptreact",
+        "*.html": "html"
     },
-
     "files.exclude": {
         "**/.git": true,
         "**/.DS_Store": true,
@@ -37,16 +38,26 @@
         "**/*.sublime-workspace": true
     },
     "files.insertFinalNewline": true,
-
-    "markdown.styles": ["file:///Users/kyao/Documents/Misc/My-OSX-Config/vscode/github-markdown.css"],
-
+    "files.trimTrailingWhitespace": true,
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "javascript.implicitProjectConfig.checkJs": true,
+    "javascript.validate.enable": false,
+    "markdown.styles": [
+        "file:///Path/to/My-OSX-Config/vscode/github-markdown.css"
+    ],
+    "jest.autoEnable": false,
     "search.exclude": {
         "**/node_modules": true,
         "**/dist": true
     },
-
     "eslint.enable": true,
-    "window.showFullPath": true,
+    "tidyHtml.formatOnSave": false,
+    "window.title": "${rootName}${separator}${activeEditorMedium}",
     "workbench.statusBar.visible": true,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": true,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.colorTheme": "One Monokai",
+    "workbench.iconTheme": "vs-seti"
 }

@@ -1,7 +1,27 @@
 // Place your key bindings in this file to overwrite the defaults
 [
+    { "key": "cmd+w",                  "command": "workbench.action.closeActiveEditor" },
     { "key": "ctrl+left",              "command": "subwordNavigation.cursorSubwordLeft" },
     { "key": "ctrl+right",             "command": "subwordNavigation.cursorSubwordRight" },
     { "key": "ctrl+shift+left",        "command": "subwordNavigation.cursorSubwordLeftSelect" },
-    { "key": "ctrl+shift+right",       "command": "subwordNavigation.cursorSubwordRightSelect" }
+    {
+        "key": "ctrl+shift+right",
+        "command": "subwordNavigation.cursorSubwordRightSelect"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.focusPanel"
+    },
+    {
+        "key": "ctrl+delete",
+        "command": "subwordNavigation.deleteSubwordRight"
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "subwordNavigation.deleteSubwordLeft"
+    }
 ]
