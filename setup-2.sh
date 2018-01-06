@@ -4,7 +4,7 @@ echo "What is your full name?"
 read fullname
 echo "What is your GitHub email?"
 read email
-
+echo "Enter your laptop password:"
 sudo -v
 
 # fonts
