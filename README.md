@@ -2,7 +2,7 @@
 
 I got tired of manually redoing my settings every time I used a new macbook for work or personal use, decided it’d be better to keep my settings in a central location.
 
-## Install in this order:
+## Install in this order
 
 1. Open a new terminal window using Terminal.app.
 
@@ -22,7 +22,7 @@ I got tired of manually redoing my settings every time I used a new macbook for 
     1. [Your GitHub emails](https://github.com/settings/emails)
     1. Enter your email address to the “Add email address” field. Click “Add”.
 
-1. Clone this repo and run the first setup script.
+1. Clone this repo and run the first setup script. This installs homebrew and zsh.
     ```shell
     cd ~/Downloads
     printf 'y\n' | git clone git@github.com:theconnectiv/laptop-setup.git
@@ -44,6 +44,17 @@ I got tired of manually redoing my settings every time I used a new macbook for 
     ./setup-2.sh
     # extra line break to ensure the above gets run
     ```
+    This installs the following:
+    * Iosevka and Roboto Mono fonts (used for VSCode and iTerm, respectively).
+    * Prezto for zsh (enhances your terminal experience).
+    * Other homebrew utils
+    * iTerm
+    * The latest version of git
+    * p4merge as a mergetool for git
+    * optimal git configs
+    * Visual Studio Code + useful extensions/settings
+    * asdf, node, and yarn (for javascript development)
+    * Firefox and Chrome
 
 1. Make Visual Studio Code accessible from command line.
     1. Open Visual Studio Code.app.

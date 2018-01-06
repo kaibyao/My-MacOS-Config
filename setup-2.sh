@@ -20,9 +20,6 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
-cat ./prezto/.zpreztorc >| ~/.zpreztorc
-cat ./prezto/.zshrc >| ~/.zshrc
-
 # install other homebrew utils, taken from https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
 brew install coreutils binutils diffutils gawk gnutls gpg gzip screen watch wget bash emacs gpatch less m4 make nano file-formula git openssh perl python rsync svn unzip automake autoconf openssl libyaml readline libxslt libtool unixodbc
 brew install vim --override-system-vi
