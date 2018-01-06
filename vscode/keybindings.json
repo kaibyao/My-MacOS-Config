@@ -1,27 +1,55 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    { "key": "cmd+w",                  "command": "workbench.action.closeActiveEditor" },
-    { "key": "ctrl+left",              "command": "subwordNavigation.cursorSubwordLeft" },
-    { "key": "ctrl+right",             "command": "subwordNavigation.cursorSubwordRight" },
-    { "key": "ctrl+shift+left",        "command": "subwordNavigation.cursorSubwordLeftSelect" },
-    {
-        "key": "ctrl+shift+right",
-        "command": "subwordNavigation.cursorSubwordRightSelect"
-    },
-    {
-        "key": "ctrl+`",
-        "command": "workbench.action.terminal.focus"
-    },
-    {
-        "key": "cmd+4",
-        "command": "workbench.action.focusPanel"
-    },
-    {
-        "key": "ctrl+delete",
-        "command": "subwordNavigation.deleteSubwordRight"
-    },
-    {
-        "key": "ctrl+backspace",
-        "command": "subwordNavigation.deleteSubwordLeft"
-    }
+  { "key": "cmd+w",                  "command": "workbench.action.closeActiveEditor" },
+  { "key": "ctrl+left",              "command": "subwordNavigation.cursorSubwordLeft" },
+  { "key": "ctrl+right",             "command": "subwordNavigation.cursorSubwordRight" },
+  { "key": "ctrl+shift+left",        "command": "subwordNavigation.cursorSubwordLeftSelect" },
+  {
+      "key": "ctrl+shift+right",
+      "command": "subwordNavigation.cursorSubwordRightSelect"
+  },
+  {
+      "key": "ctrl+`",
+      "command": "workbench.action.terminal.focus"
+  },
+  {
+      "key": "cmd+4",
+      "command": "workbench.action.focusPanel"
+  },
+  {
+      "key": "ctrl+delete",
+      "command": "subwordNavigation.deleteSubwordRight"
+  },
+  {
+      "key": "ctrl+backspace",
+      "command": "subwordNavigation.deleteSubwordLeft"
+  },
+  {
+      "key": "ctrl+n",
+      "command": "merge-conflict.next"
+  },
+  {
+      "key": "ctrl+p",
+      "command": "merge-conflict.previous"
+  },
+  {
+      "key": "ctrl+c",
+      "command": "merge-conflict.accept.current"
+  },
+  {
+      "key": "ctrl+shift+n",
+      "command": "explorer.newFolder"
+  },
+  {
+      "key": "ctrl+n",
+      "command": "explorer.newFile"
+  },
+  {
+      "key": "shift+cmd+e",
+      "command": "workbench.files.action.focusFilesExplorer"
+  },
+  {
+      "key": "ctrl+m",
+      "command": "editor.emmet.action.matchTag"
+  }
 ]

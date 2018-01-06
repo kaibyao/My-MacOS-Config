@@ -1,5 +1,7 @@
 [merge]
 	tool = p4mergetool
+	conflictstyle = diff3
+	ff = false
 [mergetool "p4mergetool"]
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$LOCAL $PWD/$REMOTE $PWD/$MERGED
 	trustExitCode = false
@@ -11,14 +13,7 @@
 	prompt = false
 [difftool "p4mergetool"]
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
-[user]
-	name = Kai Yao
-	email = kyao@someemail.com
 [core]
 	editor = code --wait
 [push]
 	default = simple
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true

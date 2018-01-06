@@ -3,6 +3,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Customize to your needs...
+
 # Sublime Text
 export SUBLIME=subl
 export EDITOR="$SUBLIME --wait"
@@ -30,10 +32,5 @@ man() {
 . ~/.nvm/nvm.sh
 
 nvm use default
-eval "$(grunt --completion=zsh)"
 
-# Maven
-# export JAVA_HOME=$(/usr/libexec/java_home)
-
-# Path
-# export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$PATH"
