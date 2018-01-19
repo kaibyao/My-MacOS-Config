@@ -1,18 +1,21 @@
 #!/usr/bin/env zsh
 
+echo "Enter your laptop password:"
+sudo -v
+
 echo "What is your full name?"
 read fullname
 echo "What is your GitHub email?"
 read email
-echo "Enter your laptop password:"
-sudo -v
 
 # fonts
+echo "Installing dev-friendly fonts..."
 brew tap caskroom/fonts
 brew cask install font-iosevka
 brew cask install font-roboto-mono
 
 # prezto
+echo "Setting up prezto..."
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 setopt EXTENDED_GLOB
@@ -21,28 +24,30 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 
 # install other homebrew utils, taken from https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
+echo "Installing other key utils via homebrew..."
 brew install coreutils binutils diffutils gawk gnutls gpg gzip screen watch wget bash emacs gpatch less m4 make nano file-formula git openssh perl python rsync svn unzip automake autoconf openssl libyaml readline libxslt libtool unixodbc
 brew install vim --override-system-vi
 
 # iTerm
+echo "Installing iTerm... (use this instead of terminal.app)"
 wget -O ~/Downloads/iTerm.zip https://iterm2.com/downloads/stable/latest
 unzip ~/Downloads/iTerm.zip
 sudo mv iTerm.app /Applications/
 rm -f ~/Downloads/iTerm.zip
 
 cp -f ./iterm/com.googlecode.iterm2.plist ~/Library/Preferences/
-
-# I think the preferences copied over actually contain the color scheme
-# open ./iterm/monokai-soda.itermcolors
+open ./iterm/monokai-soda.itermcolors
 
 # git
+echo "Updating to the latest git..."
 brew cask install p4merge
-cat ./git/.gitconfig >| ~/.gitconfig
+cat ./.gitconfig >| ~/.gitconfig
 echo "[user]
 	name = $fullname
 	email = $email" >> ~/.gitconfig
 
 # vscode
+echo "Installing VS Code + dev-friendly extensions..."
 wget -O ~/Downloads/vscode.zip "https://vscode-update.azurewebsites.net/latest/darwin/stable"
 unzip ~/Downloads/vscode.zip
 mv Visual\ Studio\ Code.app /Applications/
@@ -57,14 +62,18 @@ cp -f ./vscode/settings.json ~/Library/Application\ Support/Code/User/
 cp -f ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/
 
 # asdf, node, yarn
+echo "Installing asdf, node, and yarn"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.1
 
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
-asdf install nodejs 9.3.0
-asdf global nodejs 9.3.0
+asdf install nodejs 9.4.0
+asdf global nodejs 9.4.0
+npm config set scripts-prepend-node-path true
 brew install yarn --without-node
+
+yarn global add eslint
 
 # FireFox
 wget -O ~/Downloads/firefox.dmg "https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US"

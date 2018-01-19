@@ -6,28 +6,26 @@ I got tired of manually redoing my settings every time I used a new macbook for 
 
 1. Open a new terminal window using Terminal.app.
 
-1. Run the following to install XCode Developer Tools: `xcode-select --install`.
+1. Create a public SSH key: `ssh-keygen` (then hit `ENTER` 3 times).
 
-1. Create a public SSH key: `printf "\n\n\n" | ssh-keygen`.
-
-1. Copy and paste this SSH key to your GitHub profile.
+1. Instructions for copying and paste your SSH key to your GitHub profile:
     1. Copy and paste this command into Terminal and hit enter: `cat ~/.ssh/id_rsa.pub | pbcopy`. This copies your newly created SSH key to your clipboard. Should you accidentally copy other text afterwards, go ahead and paste this command into Terminal and it’ll recopy the SSH key.
-    1. Go to [Your GitHub SSH keys](https://github.com/settings/keys)
+    1. Go to [your GitHub SSH key Settings](https://github.com/settings/keys)
     1. Click “New SSH key”.
-    1. Title your key (“Connectiv Laptop” works).
+    1. Title your key (“Laptop” works).
     1. Paste the output that you copied into the “Key” field.
     1. Click “Add SSH key”.
 
-1. Add your Connectiv email address to your GitHub profile
-    1. [Your GitHub emails](https://github.com/settings/emails)
+1. Add your email address to your GitHub profile
+    1. Go to [your GitHub Email Settings](https://github.com/settings/emails)
     1. Enter your email address to the “Add email address” field. Click “Add”.
 
-1. Clone this repo and run the first setup script. This installs homebrew and zsh.
+1. Clone this repo and run the first setup script.
     ```shell
-    cd ~/Downloads
-    printf 'y\n' | git clone git@github.com:theconnectiv/laptop-setup.git
-    cd laptop-setup
-    ./setup-1.sh
+    cd ~/Downloads;\
+    printf 'y\n' | git clone git@github.com:kaibyao/My-OSX-Config.git;\
+    cd laptop-setup;\
+    ./setup-1.sh;\
     # extra line break to ensure the above gets run
     ```
 
@@ -39,9 +37,8 @@ I got tired of manually redoing my settings every time I used a new macbook for 
 
 1. Run the second setup script.
     ```shell
-    cd ~/Downloads/laptop-setup
-    sudo -v
-    ./setup-2.sh
+    cd ~/Downloads/laptop-setup;\
+    ./setup-2.sh;\
     # extra line break to ensure the above gets run
     ```
     This installs the following:
@@ -63,9 +60,9 @@ I got tired of manually redoing my settings every time I used a new macbook for 
     1. Select `Shell Command: Install 'code' command in PATH`.
     1. Now you can open VSCode with the current working folder from your terminal by typing `code .`.
 
-1. Optionally, run the `osx/extra-osx-perf-scripts.sh` script in this repo to disable extra MacOS fluff features (like window transparency, animations, etc). Overall it should speed up your laptop.
+1. Optionally, run the `extra-osx-perf-scripts.sh` script in this repo to disable extra MacOS fluff features (like window transparency, animations, etc). Overall it should speed up your laptop.
     ```shell
-    ./osx/exra-osx-perf-scripts.sh
+    ./extra-osx-perf-scripts.sh
     ```
 
 1. Install Moom
