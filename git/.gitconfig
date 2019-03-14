@@ -1,6 +1,7 @@
 [merge]
 	tool = p4mergetool
 	conflictstyle = diff3
+	# ff = false
 [mergetool "p4mergetool"]
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$LOCAL $PWD/$REMOTE $PWD/$MERGED
 	trustExitCode = false
@@ -14,5 +15,13 @@
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
 [core]
 	editor = code --wait
+	autocrlf = input
 [push]
 	default = simple
+[user]
+	name = Kai Yao
+	email = kai.b.yao@gmail.com
+[alias]
+	lg = log --color --graph --oneline --decorate
+[pull]
+	rebase = true
