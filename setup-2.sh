@@ -10,9 +10,10 @@ read email
 
 # fonts
 echo "Installing dev-friendly fonts..."
-brew tap caskroom/fonts
-brew cask install font-iosevka
-brew cask install font-roboto-mono
+brew install svn
+brew tap homebrew/cask-fonts
+brew install --cask font-iosevka
+brew install --cask font-roboto-mono
 
 # prezto
 echo "Setting up prezto..."
@@ -40,8 +41,8 @@ open ./iterm/monokai-soda.itermcolors
 
 # git
 echo "Updating to the latest git..."
-brew cask install p4merge
-cat ./.gitconfig >| ~/.gitconfig
+brew install --cask p4v
+cat ./git/.gitconfig >| ~/.gitconfig
 echo "[user]
 	name = $fullname
 	email = $email" >> ~/.gitconfig
@@ -57,23 +58,8 @@ for ext in ./vscode/vscode-extensions/*;
 do /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension $ext;
 done
 
-mkdir -p ~/Library/Application\ Support/Code/User/
-cp -f ./vscode/settings.json ~/Library/Application\ Support/Code/User/
-cp -f ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/
-
-# asdf, node, yarn
-echo "Installing asdf, node, and yarn"
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.1
-
-asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
-
-asdf install nodejs 9.4.0
-asdf global nodejs 9.4.0
-npm config set scripts-prepend-node-path true
-brew install yarn --without-node
-
-yarn global add eslint
+# better tools
+brew install starship exa bat fzf tldr
 
 # FireFox
 wget -O ~/Downloads/firefox.dmg "https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US"
@@ -88,3 +74,19 @@ hdiutil attach ~/Downloads/chrome.dmg
 cp -r /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/
 hdiutil detach /Volumes/Google\ Chrome
 rm -f ~/Downloads/chrome.dmg
+
+# asdf, node, yarn
+echo "Follow latest instructions to get asdf, fnm, node, etc."
+
+# echo "Installing asdf, node, and yarn"
+# git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.1
+
+# asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+# bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+
+# asdf install nodejs 9.4.0
+# asdf global nodejs 9.4.0
+# npm config set scripts-prepend-node-path true
+# brew install yarn --without-node
+
+# yarn global add eslint

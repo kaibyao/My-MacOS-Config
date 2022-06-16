@@ -17,9 +17,9 @@ echo "Installing homebrew..."
 echo "Setting up zsh"
 brew install zsh zsh-completions
 # add the following line into the very end of the file(/etc/shells)
-echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+echo "/opt/homebrew/bin/zsh" | sudo tee -a /etc/shells
 # change default shell
-sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+sudo dscl . -create /Users/$USER UserShell /opt/homebrew/bin/zsh
 # copy zsh configs
 cp prezto/.zshrc ~/
 cp prezto/.zpreztorc ~/
