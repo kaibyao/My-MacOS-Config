@@ -10,19 +10,7 @@ I got tired of manually redoing my settings every time I used a new macbook for 
 
 1. Install [Warp Terminal](https://www.warp.dev/).
 
-1. Create a public SSH key: `ssh-keygen` (then hit `ENTER` 3 times).
-
-1. Instructions for copying and paste your SSH key to your GitHub profile:
-    1. Copy and paste this command into Terminal and hit enter: `cat ~/.ssh/id_rsa.pub | pbcopy`. This copies your newly created SSH key to your clipboard. Should you accidentally copy other text afterwards, go ahead and paste this command into Terminal and it’ll recopy the SSH key.
-    1. Go to [your GitHub SSH key Settings](https://github.com/settings/keys)
-    1. Click “New SSH key”.
-    1. Title your key (“Laptop” works).
-    1. Paste the output that you copied into the “Key” field.
-    1. Click “Add SSH key”.
-
-1. Add your email address to your GitHub profile
-    1. Go to [your GitHub Email Settings](https://github.com/settings/emails)
-    1. Enter your email address to the “Add email address” field. Click “Add”.
+1. Follow [Github Instructions to set up SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
 1. Clone this repo and run the first setup script.
     ```shell
