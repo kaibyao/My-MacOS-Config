@@ -4,9 +4,11 @@ I got tired of manually redoing my settings every time I used a new macbook for 
 
 ## Install in this order
 
-1. Add the following line to `/etc/hosts/`: `0.0.0.0 ocsp.apple.com` (disables apple phoning home for app verification). Then run: `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder` (to refresh hosts).
+1. Optional: Add the following line to `/etc/hosts/`: `0.0.0.0 ocsp.apple.com` (disables apple phoning home for app verification). Then run: `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder` (to refresh hosts).
 
-1. Open a new terminal window using Terminal.app.
+1. Install [Homebrew](https://brew.sh/).
+
+1. Install [Warp Terminal](https://www.warp.dev/).
 
 1. Create a public SSH key: `ssh-keygen` (then hit `ENTER` 3 times).
 
