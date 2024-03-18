@@ -1,3 +1,12 @@
+[alias]
+	lg = log --color --graph --oneline --decorate
+[diff]
+	tool = difftastic
+	external = difft
+[difftool]
+	prompt = false
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
 [merge]
 	tool = p4mergetool
 	conflictstyle = diff3
@@ -6,22 +15,13 @@
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$LOCAL $PWD/$REMOTE $PWD/$MERGED
 	trustExitCode = false
 [mergetool]
-	keepBackup = false
-[diff]
-	tool = p4mergetool
-[difftool]
-	prompt = false
-[difftool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
-[core]
+	keepBackup = false[core]
 	editor = code --wait
 	autocrlf = input
+[pull]
+	rebase = true
 [push]
 	default = simple
 [user]
 	name = Kai Yao
 	email = kai.b.yao@gmail.com
-[alias]
-	lg = log --color --graph --oneline --decorate
-[pull]
-	rebase = true
