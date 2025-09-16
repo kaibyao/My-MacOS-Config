@@ -1,0 +1,2 @@
+- Important: do not use the `any` type when writing or editing code.
+- Use `rm -f` to remove files. Normal `rm` and `yes | rm` won't work for you.
