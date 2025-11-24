@@ -12,38 +12,14 @@ I got tired of manually redoing my settings every time I used a new macbook for 
 
 1. Follow [Github Instructions to set up SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-1. Clone this repo and run the first setup script.
-    ```shell
-    cd ~/Downloads;\
-    printf 'y\n' | git clone git@github.com:kaibyao/My-OSX-Config.git;\
-    cd laptop-setup;\
-    ./setup-1.sh;\
-    # extra line break to ensure the above gets run
-    ```
-
-1. Close your current Terminal.app window, and open a new one. Make sure zsh is your current shell.
-    ```shell
-    echo $SHELL
-    # should return: /usr/local/bin/zsh
-    ```
-
-1. Run the second setup script.
-    ```shell
-    cd ~/Downloads/laptop-setup;\
-    ./setup-2.sh;\
-    # extra line break to ensure the above gets run
-    ```
-    This installs the following:
-    * Iosevka and Roboto Mono fonts (used for VSCode and iTerm, respectively).
-    * Prezto for zsh (enhances your terminal experience).
-    * Other homebrew utils
-    * iTerm
-    * The latest version of git
-    * p4merge as a mergetool for git
-    * optimal git configs
-    * Visual Studio Code + useful extensions/settings
-    * asdf, node, and yarn (for javascript development)
-    * Firefox and Chrome
+1. Install the following:
+    * Iosevka fonts; see [their GitHub for instructions](https://github.com/be5invis/Iosevka).
+    * [Prezto](https://github.com/sorin-ionescu/prezto) and [Powerlevel10k](https://github.com/romkatv/powerlevel10k) for enhanced terminal experience.
+    * Other homebrew utils:
+        * The latest version of git
+        * `brew install bat eza tealdeer fzf` (better/faster `cat`, `ls`, `tldr/man`, and a fuzzy file finder)
+    * [difftastic](https://github.com/Wilfred/difftastic) as a mergetool for git
+    * Copy git configs from this repo
 
 1. Make Visual Studio Code accessible from command line.
     1. Open Visual Studio Code.app.
@@ -70,9 +46,3 @@ I got tired of manually redoing my settings every time I used a new macbook for 
             1. Check `Move & Zoom`
             1. Uncheck `Move, Grow, Shrink`
             1. Check `Other actions`
-
-1. (Optional) Sublime Text setup
-
-1. (Optional) Sketch setup
-
-1. (Optional) Omnigraffle setup

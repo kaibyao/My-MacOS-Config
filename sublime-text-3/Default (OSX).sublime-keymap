@@ -1,4 +1,0 @@
-[
-	{ "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" },
-	{ "keys": ["ctrl+shift+a"], "command": "alignment" }
-]

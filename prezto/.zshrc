@@ -18,7 +18,10 @@ fi
 eval "$(starship init zsh)"
 
 # Easier commands
-alias ls="exa"
+alias cat="bat"
+alias ls="eza"
+alias man="tealdeer"
+
 alias ll="ls -lah"
 alias la="ls -A"
 
