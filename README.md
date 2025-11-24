@@ -14,6 +14,7 @@ I got tired of manually redoing my settings every time I used a new macbook for 
 
 1. Install the following:
     * Iosevka fonts; see [their GitHub for instructions](https://github.com/be5invis/Iosevka).
+    * ^ Also install the nerd variant for VSCode/Cursor Integrated Terminal font.
     * [Prezto](https://github.com/sorin-ionescu/prezto) and [Powerlevel10k](https://github.com/romkatv/powerlevel10k) for enhanced terminal experience.
     * Other homebrew utils:
         * The latest version of git
